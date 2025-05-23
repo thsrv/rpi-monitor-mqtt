@@ -1,6 +1,19 @@
+<a href="https://www.raspberrypi.com/" target="_blank">
+  <img src="https://img.shields.io/badge/Raspberry%20Pi-C51A4A?style=for-the-badge&logo=raspberrypi&logoColor=white" alt="Raspberry Pi" />
+</a>
+<a href="https://www.home-assistant.io/" target="_blank">
+  <img src="https://img.shields.io/badge/Home%20Assistant-41BDF5?style=for-the-badge&logo=home-assistant&logoColor=white" alt="Home Assistant Badge" />
+</a>
+<a href="https://mqtt.org/" target="_blank">
+  <img src="https://img.shields.io/badge/MQTT-660066?style=for-the-badge&logo=mqtt&logoColor=white" alt="MQTT Badge" />
+</a>
+<a href="https://www.python.org/" target="_blank">
+    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+</a>
+
 # Raspberry Pi Monitor via MQTT (Zero Dependência Externa)
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/f98bf0f6-978c-4b6e-b3a2-f6e2b0cdfe6f" width="600"/>
+  <img src="https://github.com/user-attachments/assets/f98bf0f6-978c-4b6e-b3a2-f6e2b0cdfe6f" width="400"/>
 </div>
 <br>
 Script simples em Python 3 para monitoramento de um Raspberry Pi via **MQTT**, ideal para integração com o **Home Assistant**. Utiliza apenas bibliotecas nativas do Python e sockets diretos (sem mosquitto-clients, paho, etc).
