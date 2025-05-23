@@ -153,6 +153,7 @@ mqtt:
       value_template: "{% if value_json.tailscale.connected %}Connected{% else %}Disconnected{% endif %}"
       icon: "mdi:vpn"
 ```
+![image](https://github.com/user-attachments/assets/7e694091-e992-4f9c-9393-c537bf4dd182)
 
 ## 📝 Observações
 - Compatível com hardware antigo e leve.
