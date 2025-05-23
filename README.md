@@ -29,7 +29,7 @@ Script simples em Python 3 para monitoramento de um Raspberry Pi via **MQTT**, i
   - Retorna o IP virtual atribuído (tailscale0)
 ---
 
-📡Os dados são enviados a cada 5 minutos (Parametrizável) no formato JSON para um tópico MQTT definido pelo usuário.
+📡Os dados são enviados a cada 1 minuto (Parametrizável) no formato JSON para um tópico MQTT definido pelo usuário.
 Tópico padrão:
 ```python
 MQTT_TOPIC = "raspberry/monitor/state"
@@ -70,7 +70,7 @@ MQTT_PASSWORD = "SUA_SENHA"               # Substitua pela sua senha MQTT
 ```git
 nano ~/monitor_simples.py
 ```
-Utilize o script [monitor_simples.py](link) deste repositório copiando seu conteúdo completo.
+Utilize o script [monitor_simples.py](https://github.com/thsrv/rpi-monitor-mqtt/blob/main/monitor_simples.py) deste repositório copiando seu conteúdo completo.
 Depois, torne-o executável:
 ```git
 chmod +x ~/monitor_simples.py
