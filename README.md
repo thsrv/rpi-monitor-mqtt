@@ -16,7 +16,7 @@
   <img src="https://github.com/user-attachments/assets/f98bf0f6-978c-4b6e-b3a2-f6e2b0cdfe6f" width="400"/>
 </div>
 <br>
-Script simples em Python 3 para monitoramento de um Raspberry Pi via **MQTT**, ideal para integração com o **Home Assistant**. Utiliza apenas bibliotecas nativas do Python e sockets diretos (sem mosquitto-clients, paho, etc).
+Script simples em Python 3 para monitoramento de um Raspberry Pi via **MQTT** , ideal para integração com o **Home Assistant** . Utiliza apenas bibliotecas nativas do Python e sockets diretos (sem mosquitto-clients, paho, etc).
 
 
 ---
