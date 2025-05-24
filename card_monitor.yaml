@@ -1,0 +1,61 @@
+type: custom:vertical-stack-in-card
+cards:
+  - type: entities
+    title: RPi1 -- Tailscale VPN
+    show_header_toggle: false
+    entities:
+      - entity: sensor.raspberry_pi_vpn_ultimo_boot
+        name: Last boot
+        icon: mdi:clock
+      - entity: sensor.raspberry_pi_vpn_status_tailscale_vpn
+        name: Status
+        icon: mdi:vpn
+        secondary_info: last-updated
+      - entity: sensor.raspberry_pi_vpn_ip_local
+        name: IP Local
+        icon: mdi:ip
+      - entity: sensor.raspberry_pi_vpn_ip_tailscale_vpn
+        name: IP VPN
+        icon: mdi:ip-network
+  - type: horizontal-stack
+    cards:
+      - type: custom:mini-graph-card
+        entities:
+          - sensor.raspberry_pi_vpn_uso_cpu
+        name: CPU
+        line_color: "#2980b9"
+        line_width: 8
+        hours_to_show: 24
+        font_size: 70
+        show_label: true
+        icon: mdi:cpu-32-bit
+        lower_bound: 0
+        upper_bound: 100
+      - type: custom:mini-graph-card
+        entities:
+          - sensor.raspberry_pi_vpn_temperatura_cpu
+        name: Temperatura
+        line_color: "#2980b9"
+        line_width: 8
+        hours_to_show: 24
+        font_size: 70
+        show_label: true
+        icon: mdi:thermometer
+  - type: custom:bar-card
+    entity: sensor.raspberry_pi_vpn_uso_memoria
+    name: RAM
+    icon: mdi:memory
+    positions:
+      icon: outside
+      name: inside
+    color: "#00ba6a"
+    severity:
+      - color: "#40bf40"
+        from: 0
+        to: 49
+      - color: "#ffb300"
+        from: 50
+        to: 85
+      - color: "#c70404"
+        from: 86
+        to: 100
