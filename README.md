@@ -16,7 +16,7 @@
   <img src="https://github.com/user-attachments/assets/f98bf0f6-978c-4b6e-b3a2-f6e2b0cdfe6f" width="400"/>
 </div>
 <br>
-Script simples em Python 3 para monitoramento de um Raspberry Pi via <b>MQTT</b> , ideal para integração com o <b>Home Assistant</b> . Utiliza apenas bibliotecas nativas do Python e sockets diretos (sem mosquitto-clients, paho, etc).
+Script simples em Python para monitoramento de um Raspberry Pi via <b>MQTT</b> , ideal para integração com o <b>Home Assistant</b> . Utiliza apenas bibliotecas nativas do Python e sockets diretos (sem mosquitto-clients, paho, etc).
 
 
 ---
@@ -83,7 +83,7 @@ MQTT_PASSWORD = "SUA_SENHA"               # Substitua pela sua senha MQTT
 ```git
 nano ~/monitor_simples.py
 ```
-Utilize o script [monitor_simples.py](https://github.com/thsrv/rpi-monitor-mqtt/blob/main/monitor_simples.py) deste repositório copiando seu conteúdo completo.
+Utilize o script [monitor_simples.py](https://github.com/thsrv/rpi-monitor-mqtt/blob/main/monitor_simples.py) deste repositório copiando seu conteúdo completo.<br>
 Depois, torne-o executável:
 ```git
 chmod +x ~/monitor_simples.py
@@ -153,7 +153,9 @@ mqtt:
       value_template: "{% if value_json.tailscale.connected %}Connected{% else %}Disconnected{% endif %}"
       icon: "mdi:vpn"
 ```
-![image](https://github.com/user-attachments/assets/7e694091-e992-4f9c-9393-c537bf4dd182)
+Exemplo do card:<br>
+![image](https://github.com/user-attachments/assets/7e694091-e992-4f9c-9393-c537bf4dd182)<br>
+> [Código YAML do card](https://github.com/thsrv/rpi-monitor-mqtt/blob/main/card_monitor.yaml)
 
 ## 📝 Observações
 - Compatível com hardware antigo e leve.
