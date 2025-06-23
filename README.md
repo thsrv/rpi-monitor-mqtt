@@ -35,11 +35,14 @@ Script simples em Python para monitoramento de um Raspberry Pi via <b>MQTT</b> ,
   - Temperatura da CPU
   - Uso de CPU (%)
   - Uso de memória (MB e %)
+  - Uso do disco
   - Tempo desde o último boot
   - IP local da rede
 - Monitoramento da VPN Tailscale:
   - Verifica se o Tailscale está ativo
   - Retorna o IP virtual atribuído (tailscale0)
+  - Obtém a lista de peers conectados via Tailscale
+  - Verifica se houve mudança no status dos peers Tailscale entre dois momentos.
 ---
 
 📡Os dados são enviados a cada 1 minuto (Parametrizável) no formato JSON para um tópico MQTT definido pelo usuário.
@@ -66,8 +69,9 @@ Exemplo de payload:
   },
   "tailscale": {
     "connected": true,
-    "ip": "112.541.300.1"
-  }
+    "ip": "111.111.1.22"
+  },
+  "tailscale_clientes": []
 }
 ```
 ## 🛠️ Configuração
