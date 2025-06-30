@@ -158,8 +158,8 @@ mqtt:
       icon: "mdi:vpn"
 ```
 Exemplo do card:<br>
-![image](https://github.com/user-attachments/assets/7e694091-e992-4f9c-9393-c537bf4dd182)<br>
-> [Código YAML do card](https://github.com/thsrv/rpi-monitor-mqtt/blob/main/card_monitor.yaml)
+![image](https://github.com/user-attachments/assets/c8e4b001-8845-479a-9132-05712628449e)<br>
+<br>
 
 ## 📝 Observações
 - Compatível com hardware antigo e leve.
